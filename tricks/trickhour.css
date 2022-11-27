@@ -1,0 +1,72 @@
+body {
+    background: black;
+    background-size: cover;
+    margin: 0;
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+  
+  .container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+}
+  
+  .canvas {
+    align-items: center;
+    background: #eeeeee;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    height: 10em;
+    justify-content: center;
+    margin: 1em 1em 2em 1em;
+    width: 10em;
+  }
+  
+  .spinner2 {
+    animation: spinnerTwo 1s linear infinite;
+    background: black;
+    border-radius: 100px;
+    height: 3em;
+    transform-origin: top;
+    position: absolute;
+    top: 50%;
+    width: .22em;
+  }
+  
+  .hourHand {
+    animation: spinnerTwo 7s linear infinite;
+    background: black;
+    border-radius: 100px;
+    height: 2em;
+    transform-origin: top;
+    position: absolute;
+    top: 50%;
+    width: .2em;
+  }
+  
+  .dot {
+    background: black;
+    border-radius: 50%;
+    height: .5em;
+    width: .5em;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+  
+  @keyframes spinnerTwo {
+    0% {
+      transform: rotate(0deg)
+    }
+    100% {
+      transform: rotate(360deg)
+    }
+  } 
